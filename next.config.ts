@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  transpilePackages: ['gsap'],
+  // Other Next.js config options...
+}
 
-export default nextConfig;
+export default nextConfig

@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer components{
+    .nav__link {
+        @apply relative text-base font-medium w-fit block text-white after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8750f7]  after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-right;   
+
+    }
+    .text-bg{
+        background-image: linear-gradient(to right, #8750f7 0%,#ffffff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar{
+        width:10px;
+        height: 10px;
+
+    }
+    .custom-scrollbar::-webkit-scrollbar-track{
+        background: #44028f;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb{
+        background: #c277fa;
+        border-radius: 4px;
+    }
+    .scroll-mt-12vh {
+  scroll-margin-top: 12vh;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html{
+    scroll-behavior: smooth;
 }
