@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
 @layer components{
     .nav__link {
         @apply relative text-base font-medium w-fit block text-white after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#8750f7]  after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-right;   

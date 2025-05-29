@@ -134,7 +134,7 @@ const Hero = () => {
               <a ref={el => {iconRefs.current[0] = el}} href="https://www.linkedin.com/in/aryan-shetty-1972012b0" target='_blank' ><FaLinkedin className='text-white w-7 h-7 hover:scale-125 transition-all duration-300'/></a>
               <a ref={el => {iconRefs.current[1] = el}} href={"https://www.instagram.com/shettyaryan01?igsh=MTE2bXZobTQ5ajZucA=="} target='_blank' ><FaInstagram className='text-white w-7 h-7 hover:scale-125 transition-all duration-300'/></a>
               <a ref={el => {iconRefs.current[2] = el}} href={""} target='_blank' ><FaGithub className='text-white w-7 h-7 hover:scale-125 transition-all duration-300'/></a>
-              <a ref={el => {iconRefs.current[3] = el}} href={""} target='_blank' ><FaTwitter className='text-white w-7 h-7 hover:scale-125 transition-all duration-300'/></a>
+              <a ref={el => {iconRefs.current[3] = el}} href={"https://x.com/AryanDevelops01"} target='_blank' ><FaTwitter className='text-white w-7 h-7 hover:scale-125 transition-all duration-300'/></a>
             </div>
             <a 
               href='https://drive.google.com/file/d/1Wr8Y4Y5wE8DSIVjxpN610sPQiTUYOg9R/view?usp=sharing' 
