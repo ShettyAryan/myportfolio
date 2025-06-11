@@ -1,12 +1,13 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SectionHeading from '@/component/Helper/SectionHeading'
 import { projectData } from '@/Data/data'
 import Image from 'next/image'
 import Link from 'next/link'
+import Loading from '@/component/Loading'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -14,6 +15,16 @@ const Projects = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
   const headingRef = useRef<HTMLDivElement>(null)
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
+
+  const [loading, setLoading] = useState<boolean>(false)
+  
+  if(!loading){
+   <Loading />
+  }
+  
+  useEffect(()=>{
+    setLoading(true)
+  },[])
 
   useEffect(() => {
     const ctx = gsap.context(() => {

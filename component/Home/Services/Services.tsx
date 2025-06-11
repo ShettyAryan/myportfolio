@@ -1,11 +1,12 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SectionHeading from '@/component/Helper/SectionHeading'
 import { servicesData } from '@/Data/data'
 import ServiceCard from './ServiceCard'
+import Loading from '@/component/Loading'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -13,6 +14,16 @@ const Services = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
   const headingRef = useRef<HTMLHeadingElement>(null)
   const cardsRef = useRef<HTMLDivElement[]>([])
+
+  const [loading, setLoading] = useState<boolean>(false)
+
+if(!loading){
+ <Loading />
+}
+
+useEffect(()=>{
+  setLoading(true)
+},[])
 
   // Populate refs for card animations
   const addToCardsRef = (el: HTMLDivElement | null) => {

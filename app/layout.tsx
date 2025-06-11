@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/component/Home/Navbar/ResponsiveNav";
 import Footer from "@/component/Home/Footer/Footer";
 import ScrollToTop from "@/component/Helper/ScrollToTop";
+import PageLoader from "@/component/PageLoader";
 // import AnimatedCursor from "react-animated-cursor";
 
 const font = Sora({
@@ -33,6 +34,7 @@ export default function RootLayout({
             border:'3px solid white',
           }}/> */}
         </div>
+        <PageLoader />
         <ResponsiveNav />
         {children}
         <Footer />

@@ -1,7 +1,8 @@
 'use client';
 
+import Loading from '@/component/Loading';
 import Image from 'next/image';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Tilt from 'react-parallax-tilt'
 
 type Props={
@@ -14,6 +15,17 @@ type Props={
 }
 
 const ServiceCard = ({service}:Props) => {
+
+const [loading, setLoading] = useState<boolean>(false)
+
+if(!loading){
+ <Loading />
+}
+
+useEffect(()=>{
+  setLoading(true)
+},[])
+
   return (
     <Tilt className='shadow-2xl p-6 rounded-lg bg-[#814ced]'>
       <Image src={`${service.icon}`} alt={service.description} width={50} height={50}/>

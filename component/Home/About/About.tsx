@@ -2,15 +2,27 @@
 import SectionHeading from '@/component/Helper/SectionHeading';
 import { aboutInfo } from '@/Data/data';
 import Image from 'next/image';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Loading from '@/component/Loading';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+
+const [loading, setLoading] = useState<boolean>(false)
+
+if(!loading){
+ <Loading />
+}
+
+useEffect(()=>{
+  setLoading(true)
+},[])
+
   // Refs with proper TypeScript types
   const sectionRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);

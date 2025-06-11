@@ -1,6 +1,7 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Loading from '@/component/Loading';
 
 // Define the type for the form data
 interface FormData {
@@ -13,6 +14,16 @@ interface FormData {
 }
 
 const ContactForm: React.FC = () => {
+
+const [loading, setLoading] = useState<boolean>(false)
+
+if(!loading){
+ <Loading />
+}
+
+useEffect(()=>{
+  setLoading(true)
+},[])
   // Ref for the form
   const form = useRef<HTMLFormElement>(null);
 

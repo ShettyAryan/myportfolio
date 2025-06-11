@@ -3,12 +3,24 @@
 import { BaseInfo } from '@/Data/data'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaDownload } from 'react-icons/fa'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6'
 import gsap from 'gsap'
+import Loading from '@/component/Loading'
 
 const Hero = () => {
+
+const [loading, setLoading] = useState<boolean>(false)
+
+if(!loading){
+ <Loading />
+}
+
+useEffect(()=>{
+  setLoading(true)
+},[])
+
   // Create properly typed refs for elements we want to animate
   const nameRef = useRef<HTMLHeadingElement>(null);
   const positionRef = useRef<HTMLHeadingElement>(null);

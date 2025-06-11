@@ -6,6 +6,7 @@ import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 import gsap from 'gsap'
+import Loading from '@/component/Loading';
 
 type Props = {
  openNav: () => void
@@ -13,6 +14,16 @@ type Props = {
 
 const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false)
+
+  const [loading, setLoading] = useState<boolean>(false)
+
+if(!loading){
+ <Loading />
+}
+
+useEffect(()=>{
+  setLoading(true)
+},[])
 
   // References for animation
   const navRef = useRef<HTMLDivElement>(null)
