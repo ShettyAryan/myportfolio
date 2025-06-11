@@ -84,8 +84,8 @@ export const BaseInfo = {
     },
     {
       id: 3,
-      image: "/images/sidcup.png",
-      url: "/",
+      image: "/images/ecom.png",
+      url: "https://ecom-nine.vercel.app/",
     },
     
   ];
