@@ -92,6 +92,24 @@ export const projectData = [
   },
   {
     id: 2,
+    image: "/images/codequest.png",
+    url: "https://code-quest-aryan.vercel.app/",
+    title: "CodeQuest",
+    description:
+      "A Full Stack Web application where users can choose their coding challenge difficulty and get MCQs + explanations instantly.",
+    techStack: [
+      "Next.js",
+      "Typescript",
+      "React19",
+      "FastAPI",
+      "Mistral",
+      "TailwindCSS",
+      "Clerk",
+      "sqlite",
+    ],
+  },
+  {
+    id: 3,
     image: "/images/ecom.png",
     url: "https://ecom-nine.vercel.app/",
     title: "E-Commerce Store",
@@ -106,7 +124,7 @@ export const projectData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/notesapp.png",
     url: "https://notesapp-ashy-five.vercel.app/",
     title: "Notes App",
@@ -114,7 +132,7 @@ export const projectData = [
     techStack: ["MERN", "Axios", "MongoDB Atlas", "JWT Auth"],
   },
   {
-    id: 4,
+    id: 5,
     image: "/images/nike.png",
     url: "https://serene-donut-234405.netlify.app",
     title: "Nike UI Clone",
