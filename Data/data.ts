@@ -1,15 +1,15 @@
 export const BaseInfo = {
   name: "Aryan Shetty",
-  position: "Full Stack Web Developer",
+  position: "Full Stack Developer",
   description:
-    "I’m a curious mind with a passion for building things—whether it’s crafting sleek web apps, exploring new tech stacks, or diving into business ideas. I thrive on challenges and love blending creativity with problem-solving. Let’s connect and make something awesome!",
+    "I'm a full-stack developer passionate about building scalable SaaS products and AI-powered applications. With experience in React, Next.js, TypeScript, and FastAPI, I specialize in crafting modern dashboards and production-ready web apps that are fast, reliable, and user-focused. Always curious, always building—let's turn ideas into impactful products!",
   profilePic: "/images/hero.png",
 };
 
 export const aboutInfo = {
-  title: "Building with Passion and Precision",
+  title: "Building Scalable SaaS & AI-Powered Applications",
   description:
-    "I am a developer committed to delivering tailored web solutions. I’m a builder at heart—whether it’s coding up cool web apps, brainstorming startup ideas, or just figuring out how things work. I love mixing creativity with logic, and I’m always up for a new challenge.",
+    "I'm a full-stack developer who thrives on turning ideas into real, production-ready products. My focus is on building modern SaaS applications, polished dashboards, and AI-driven tools that blend performance with great user experience. With hands-on experience across the stack—from frontend design systems to backend APIs and cloud deployments—I love solving challenges and shipping products that make an impact.",
   client: "50+",
   experience: "3+",
   project: "200+",
@@ -19,57 +19,62 @@ export const aboutInfo = {
 export const servicesData = [
   {
     id: 1,
-    title: " Web Applications",
-    description: "Tailored web apps built with the latest technologies.",
+    title: "SaaS Applications",
+    description:
+      "End-to-end SaaS platforms with authentication, subscriptions, and analytics.",
     icon: "/images/s1.png",
   },
   {
     id: 2,
-    title: "E-commerce Websites",
+    title: "E-Commerce Platforms",
     description:
-      "Secure online stores with user-friendly shopping and payments.",
+      "Scalable, secure online stores with seamless payments and order management.",
     icon: "/images/s2.png",
   },
   {
     id: 3,
-    title: "API Integration",
+    title: "API Development & Integration",
     description:
-      "Seamless integration for smooth data sharing and functionality.",
+      "Design and integration of REST APIs for smooth data exchange and workflows.",
     icon: "/images/s3.png",
   },
   {
     id: 4,
-    title: "User Interfaces",
+    title: "Modern User Interfaces",
     description:
-      "Engaging, responsive front-end designs for better user experiences.",
+      "Polished, responsive UIs built with React, TypeScript, and TailwindCSS.",
     icon: "/images/s4.png",
   },
   {
     id: 5,
-    title: "Database Solutions",
+    title: "Database & Cloud Solutions",
     description:
-      "Efficient and scalable database management for your data needs.",
+      "Efficient database design with PostgreSQL, MongoDB, and cloud deployments.",
     icon: "/images/s5.png",
   },
   {
     id: 6,
     title: "Real-Time Features",
-    description: "Add live chat, notifications, and real-time data updates.",
+    description:
+      "Live chat, notifications, and real-time data sync for interactive experiences.",
     icon: "/images/s6.png",
   },
   {
     id: 7,
-    title: "Speed Optimization",
-    description: "Boost performance with faster load times and optimization.",
+    title: "Performance Optimization",
+    description:
+      "Improving load times, scalability, and Lighthouse scores for better UX.",
     icon: "/images/s7.png",
   },
   {
     id: 8,
-    title: "Website Management",
-    description: "Easy content management systems with flexible controls.",
+    title: "Product Maintenance",
+    description:
+      "Continuous updates, monitoring, and feature enhancements post-launch.",
     icon: "/images/s8.png",
   },
 ];
+
 
 export const projectData = [
   {
@@ -92,6 +97,15 @@ export const projectData = [
   },
   {
     id: 2,
+    image: "/images/aigenagentic.png", 
+    url: "https://aigenagentic.vercel.app/", 
+    title: "AIGenAgentic Solutions",
+    description:
+      "Freelance Full-Stack Developer (Contract) - Designed, built, and deployed the agency’s public website with scheduling integration, analytics, and production-ready deployment within tight timelines.",
+    techStack: ["Next.js", "TailwindCSS", "Typescript", "MongoDB"],
+  },
+  {
+    id: 3,
     image: "/images/codequest.png",
     url: "https://code-quest-aryan.vercel.app/",
     title: "CodeQuest",
@@ -109,7 +123,7 @@ export const projectData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/ecom.png",
     url: "https://ecom-nine.vercel.app/",
     title: "E-Commerce Store",
@@ -124,7 +138,7 @@ export const projectData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     image: "/images/notesapp.png",
     url: "https://notesapp-ashy-five.vercel.app/",
     title: "Notes App",
@@ -132,7 +146,7 @@ export const projectData = [
     techStack: ["MERN", "Axios", "MongoDB Atlas", "JWT Auth"],
   },
   {
-    id: 5,
+    id: 6,
     image: "/images/nike.png",
     url: "https://serene-donut-234405.netlify.app",
     title: "Nike UI Clone",

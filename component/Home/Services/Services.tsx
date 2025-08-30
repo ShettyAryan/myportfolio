@@ -70,7 +70,7 @@ useEffect(()=>{
       <div ref={headingRef}>
         <SectionHeading>Services</SectionHeading>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mx-auto w-[80%] items-center mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mx-auto w-[80%] items-stretch mt-20">
         {servicesData.map((service) => (
           <div key={service.id} ref={addToCardsRef}>
             <ServiceCard service={service} />
