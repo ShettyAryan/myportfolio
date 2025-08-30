@@ -103,7 +103,7 @@ const ExperienceTimeline = ({
             opacity: 1,
             y: 0,
             x: 0,
-            duration: 0.8,
+            duration: 0.5,
             ease: "power2.out",
             scrollTrigger: {
               trigger: card,
@@ -202,7 +202,7 @@ const ExperienceTimeline = ({
                   {/* Experience Card */}
                   <div
                     ref={(el) => {
-                      cardRefs.current[index] = el;
+                      
                       cardsRef.current[index] = el;
                     }}
                     className={`
@@ -227,7 +227,7 @@ const ExperienceTimeline = ({
                     /> */}
 
                     {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#804cec]/10 to-[#250a39]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#804cec]/10 to-[#250a39]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:scale-105" />
 
                     <div className="relative z-9">
                       {/* Company and Duration */}
