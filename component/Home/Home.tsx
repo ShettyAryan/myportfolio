@@ -11,6 +11,7 @@ import Blog from './Blog/Blog'
 import Contact from './Contact/Contact'
 
 import Loading from '../Loading';
+import ExperienceTimeline from '../Experience/ExperienceTimeline';
 
 
 const Home = () => {
@@ -26,18 +27,32 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className='overflow-hidden'>
-      <section id='home'><Hero /></section>
-      <section id='about' className='scroll-mt-12vh'><About /></section>
-      <section id='services' className='scroll-mt-12vh'><Services /></section>
-      <section id='projects' className='scroll-mt-12vh'><Projects /></section>
-      <section id='skills'><Skills /></section>
+    <div className="overflow-hidden">
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about" className="scroll-mt-12vh">
+        <About />
+      </section>
+      <section id="services" className="scroll-mt-12vh">
+        <Services />
+      </section>
+      <section id="experience" className="scroll-mt-12vh">
+        <ExperienceTimeline />
+      </section>
+      <section id="projects" className="scroll-mt-12vh">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
       {/* <section id='reviews' className='scroll-mt-12vh'><Reviews /></section> */}
       {/* <section id='blog'><Blog /></section> */}
-      <section id='contact'><Contact /></section>
-           
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
-  )
+  );
 }
 
 export default Home

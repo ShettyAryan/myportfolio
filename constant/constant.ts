@@ -19,13 +19,13 @@ export const navLinks = [
         url:"#projects",
         label:"Projects"
     },
-    // {
-    //     id:5,
-    //     url:"#reviews",
-    //     label:"Reviews"
-    // },
     {
         id:5,
+        url:"#experience",
+        label:"Experience"
+    },
+    {
+        id:6,
         url:"#contact",
         label:"Contact"
     }
